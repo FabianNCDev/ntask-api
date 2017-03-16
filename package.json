@@ -1,0 +1,11 @@
+{
+  "name": "ntask-api",
+  "version": "0.0.1",
+  "description": "an basic api of tasks with nodejs",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node index.js"
+  },
+  "author": "Fazt",
+  "license": "ISC"
+}
