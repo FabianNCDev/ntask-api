@@ -1,7 +1,9 @@
 module.exports = app => {
 
-  app.listen(PORT, () => {
-    console.log(`NTASK API - PORT ${app.get('port')}`);
+  app.db.sequelize.sync().done(() => {
+    app.listen(app.get('port'), () => {
+      console.log(`NTASK API - PORT ${app.get('port')}`);
+    });
   });
 
 };
